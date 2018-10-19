@@ -3,7 +3,7 @@ var app = angular.module('ss', []);
 app.factory('API', ['$http', function($http) {
 	
 	var API = {};
-	var urlBase = "http://svcs.ebay.com/services/search/FindingService/v1";
+	var urlBase = "https://svcs.ebay.com/services/search/FindingService/v1";
 		
 	API.getFromStore = function(store) {
 		return $http({
